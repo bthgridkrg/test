@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на уровень стресса</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Тест на уровень стресса у студентов</h1>
+            <p class="intro">Этот тест поможет вам оценить уровень стресса и получить персональные рекомендации по его преодолению.</p>
+        </header>
+
+        <div id="test-container" class="test-container">
+            <div class="scale-info">
+                <h3>Шкала оценки:</h3>
+                <ul>
+                    <li><strong>1</strong> – Почти никогда</li>
+                    <li><strong>2</strong> – Редко</li>
+                    <li><strong>3</strong> – Иногда</li>
+                    <li><strong>4</strong> – Часто</li>
+                    <li><strong>5</strong> – Почти всегда</li>
+                </ul>
+            </div>
+
+            <form id="stress-test-form">
+                <div id="questions-container"></div>
+                <button type="submit" id="submit-btn" class="submit-btn">Завершить тест</button>
+            </form>
+        </div>
+
+        <div id="results-container" class="results-container hidden">
+            <h2>Результаты теста</h2>
+            <div id="score-display" class="score-display"></div>
+            <div id="level-description" class="level-description"></div>
+            <div id="block-analysis" class="block-analysis"></div>
+            <div id="recommendations" class="recommendations"></div>
+            <button id="restart-btn" class="restart-btn">Пройти тест заново</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
